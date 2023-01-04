@@ -2,6 +2,16 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Welcome() {
+  const callAPI = async () => {
+    try {
+      const res = await fetch(`https://jsonplaceholder.typicode.com/posts/1`);
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,9 +22,7 @@ export default function Welcome() {
       <main>
         <h1 className={styles.title}>Welcome Page</h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <button onClick={callAPI}>Make API Call</button>
 
         <div className={styles.grid}>
           <a href='https://nextjs.org/docs' className={styles.card}>
