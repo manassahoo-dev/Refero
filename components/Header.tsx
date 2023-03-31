@@ -18,7 +18,7 @@ export default function Header() {
             <nav>
               <ul className='flex flex-col m-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
                 <li className='m-0'>
-                  <Link href='/jobs' className='link'>
+                  <Link href='/users' className='link'>
                     Users
                   </Link>
                 </li>
@@ -28,14 +28,18 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className='m-0'>
-                  <Link href='/jobs' className='link'>
+                  <Link href='/resources' className='link'>
                     Resources
                   </Link>
                 </li>
                 <li className='m-0'>
-                  <Link href='/jobs' className='link'>
+                  <a
+                    href='https://github.com/manassahoo-dev/Refero'
+                    target='_blank'
+                    className='link'
+                  >
                     Github
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
