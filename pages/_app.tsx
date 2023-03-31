@@ -1,6 +1,6 @@
+import '../styles/globals.css';
 import { CssBaseline, GeistProvider } from '@geist-ui/core';
 import Layout from '../components/Layout';
-import '../styles/globals.css';
 
 const App = ({ Component, pageProps }) => {
   return (
