@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Manas Ranjan Sahoo",
+    "email": "manas_sahoo@outlook.com",
+    "jobTitle": "Frontend Developer",
+    "location": "Hyderabad",
+    "profile_picture": "https://avatars.githubusercontent.com/u/6974223?v=4",
+    "skills": ["React", "JavaScript", "CSS"],
+    "linkedin": "https://www.linkedin.com/in/manas-ranjan-sahoo",
+    "github": "https://github.com/manassahoo-dev"
+  }
+]
