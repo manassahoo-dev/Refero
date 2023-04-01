@@ -8,19 +8,26 @@ const App = ({ Component, pageProps }) => {
     <GeistProvider>
       <CssBaseline />
       <Layout>
+         
         <Script
-          src='https://www.googletagmanager.com/gtag/js?id=UA-49136745-2'
           strategy='afterInteractive'
+          src='https://www.googletagmanager.com/gtag/js?id=G-C0L59QJF4N'
         />
-        <Script id='google-analytics' strategy='afterInteractive'>
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-49136745-2');
-        `}
-        </Script>
+            
+        <Script
+          id='google-analytics'
+          strategy='afterInteractive'
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C0L59QJF4N', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
         <Component {...pageProps} />
       </Layout>
     </GeistProvider>
