@@ -3,9 +3,28 @@ import { getAllUsers } from '../prisma/user';
 const users = ({ users }) => {
   return (
     <div>
-      {users.map((user, index) => (
-        <h1>{user.email}</h1>
-      ))}
+      <div className='container'>
+        <div className='row'>
+          {users.map((user, index) => (
+            <div className='col-3'>
+              <div className='card'>
+                <img
+                  src={user.image}
+                  className='card-img-top'
+                  alt='Profile Image'
+                />
+                <div className='card-body'>
+                  <h5 className='card-title'>{user.name}</h5>
+                  <p className='card-text'>{user.email}</p>
+                  <a href='#' className='btn btn-primary'>
+                    View Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

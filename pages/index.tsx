@@ -16,46 +16,49 @@ export default function Home() {
         </section>
 
         <section id='features'>
-          <h2>Features</h2>
-          {/* <Grid.Container gap={2} justify='center'>
-            <Grid xs={8}>
-              <Card shadow>
-                <div className='feature'>
-                  <i className='fas fa-users'></i>
-                  <h3>Networking</h3>
-                  <p>
-                    Connect with other job seekers, grow your professional
-                    network, and find new job opportunities.
-                  </p>
+          <h1 className='text-center my-4'>Features</h1>
+          <div className='container'>
+            <div className='row'>
+              <div className='col'>
+                <div className='card'>
+                  <div className='card-body'>
+                    <i className='fas fa-users'></i>
+                    <h3>Networking</h3>
+                    <p>
+                      Connect with other job seekers, grow your professional
+                      network, and find new job opportunities.
+                    </p>
+                  </div>
                 </div>
-              </Card>
-            </Grid>
-            <Grid xs={8}>
-              <Card shadow>
-                <div className='feature'>
-                  <i className='fas fa-bullhorn'></i>
-                  <h3>Job Referrals</h3>
-                  <p>
-                    Post job referrals and get referred by others to increase
-                    your chances of getting hired.
-                  </p>
+              </div>
+              <div className='col'>
+                <div className='card'>
+                  <div className='card-body'>
+                    <i className='fas fa-bullhorn'></i>
+                    <h3>Job Referrals</h3>
+                    <p>
+                      When someone refers you for a job, they are essentially
+                      vouching for your skills and abilities to the employer.
+                      This can be a valuable endorsement.
+                    </p>
+                  </div>
                 </div>
-              </Card>
-            </Grid>
-            <Grid xs={8}>
-              <Card shadow>
-                <div className='feature'>
-                  <i className='fas fa-lightbulb'></i>
-                  <h3>Tips &amp; Tricks</h3>
-                  <p>
-                    Share and learn job search strategies, resume and cover
-                    letter tips, and interview techniques from other job
-                    seekers.
-                  </p>
+              </div>
+              <div className='col'>
+                <div className='card'>
+                  <div className='card-body'>
+                    <i className='fas fa-lightbulb'></i>
+                    <h3>Tips &amp; Tricks</h3>
+                    <p>
+                      Share and learn job search strategies, resume and cover
+                      letter tips, and interview techniques from other job
+                      seekers.
+                    </p>
+                  </div>
                 </div>
-              </Card>
-            </Grid>
-          </Grid.Container> */}
+              </div>
+            </div>
+          </div>
         </section>
         <br />
       </main>

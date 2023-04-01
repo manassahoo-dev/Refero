@@ -33,8 +33,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href='/jobs' className='nav-link px-4'>
-                Jobs
+              <Link href='/resources' className='nav-link px-4'>
+                Resources
               </Link>
             </li>
           </ul>
@@ -42,7 +42,7 @@ export default function Header() {
           <div className='col-md-3 text-end'>
             {status === 'authenticated' && (
               <div>
-                <p>{session.user.name}</p>
+                <span className='mx-2'>{session.user.name}</span>
                 <button
                   onClick={() => signOut()}
                   className='btn btn-outline-primary me-2'
