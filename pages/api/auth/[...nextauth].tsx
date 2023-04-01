@@ -5,9 +5,6 @@ import { PrismaAdapter } from '@next-auth/prisma-adapter';
 
 const prisma = new PrismaClient();
 export const authOptions = {
-  session: {
-    jwt: true,
-  },
   adapter: PrismaAdapter(prisma),
   providers: [
     GithubProvider({

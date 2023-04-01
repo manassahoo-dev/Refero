@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 export default function Header() {
   const { data: session, status } = useSession();
-  console.log(session);
   return (
     <nav>
       <div className='container'>
