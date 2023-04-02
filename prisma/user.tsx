@@ -1,4 +1,3 @@
-// /prisma/user.js
 import prisma from './prisma';
 
 // READ
