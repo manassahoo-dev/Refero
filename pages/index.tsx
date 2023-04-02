@@ -1,10 +1,24 @@
 import Head from 'next/head';
+import Meta from '../components/Meta';
 
 export default function Home() {
   return (
     <div>
+      <Meta
+        title='Refero - Connect with Learners and Job Seekers'
+        description='Refero is a platform that connects learners and job seekers with mentors, coaches, and experts to help them achieve their goals.'
+        canonical='https://getrefero.vercel.app'
+        ogTitle='Refero - Connect with Learners and Job Seekers'
+        ogDescription='Refero is a platform that connects learners and job seekers with mentors, coaches, and experts to help them achieve their goals.'
+        ogImage='https://getrefero.vercel.app/Refero.png'
+        ogUrl='https://getrefero.vercel.app'
+        ogType='website'
+        twitterTitle='Refero - Connect with Learners and Job Seekers'
+        twitterDescription='Refero is a platform that connects learners and job seekers with mentors, coaches, and experts to help them achieve their goals.'
+        twitterImage='https://getrefero.vercel.appRefero.png'
+        twitterCard='summary_large_image'
+      />
       <Head>
-        <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
