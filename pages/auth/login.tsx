@@ -13,7 +13,10 @@ export default function SignIn({
     <>
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
-          <button onClick={() => signIn(provider.id)} className='btn btn-dark'>
+          <button
+            onClick={() => signIn(provider.id)}
+            className='btn btn-primary my-2'
+          >
             Sign in with {provider.name}
           </button>
         </div>
