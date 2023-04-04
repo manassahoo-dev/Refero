@@ -54,7 +54,7 @@ function Jobs() {
                 className='card-text'
                 dangerouslySetInnerHTML={{ __html: item.description }}
               ></p> */}
-              <a href='{item.link}' className='card-link'>
+              <a href={item.link} target='_blank' className='card-link'>
                 Read More
               </a>
             </div>
