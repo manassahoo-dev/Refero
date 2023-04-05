@@ -1,18 +1,19 @@
 import Head from 'next/head';
+import { memo } from 'react';
 
 const Meta = ({
-  title,
-  description,
-  canonical,
-  ogTitle,
-  ogDescription,
-  ogImage,
-  ogUrl,
-  ogType,
-  twitterTitle,
-  twitterDescription,
-  twitterImage,
-  twitterCard,
+  title = '',
+  description = '',
+  canonical = '',
+  ogTitle = '',
+  ogDescription = '',
+  ogImage = '',
+  ogUrl = '',
+  ogType = '',
+  twitterTitle = '',
+  twitterDescription = '',
+  twitterImage = '',
+  twitterCard = '',
 }) => {
   return (
     <Head>
@@ -32,4 +33,4 @@ const Meta = ({
   );
 };
 
-export default Meta;
+export default memo(Meta);
