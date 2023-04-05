@@ -46,17 +46,24 @@ function Jobs() {
         <div key={index}>
           <div className='card'>
             <div className='card-body'>
-              <h5 className='card-title'>{item.title}</h5>
-              <h6 className='card-subtitle mb-2 text-body-secondary'>
-                {item.category}
-              </h6>
-              {/* <p
-                className='card-text'
-                dangerouslySetInnerHTML={{ __html: item.description }}
-              ></p> */}
-              <a href={item.link} target='_blank' className='card-link'>
-                Read More
-              </a>
+              <div className='d-flex justify-content-between align-items-center'>
+                <div>
+                  <h5 className='card-title'>{item.title}</h5>
+                  <h6 className='card-subtitle mb-2 text-body-secondary'>
+                    {item.category}
+                  </h6>
+                  <span className='badge text-bg-dark'>{item.type}</span>
+                </div>
+                <div>
+                  <a
+                    href={item.link}
+                    target='_blank'
+                    className='btn btn-primary'
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <h3></h3>
