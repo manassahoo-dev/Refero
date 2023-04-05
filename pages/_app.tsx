@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { SessionProvider } from 'next-auth/react';
 import Script from 'next/script';
 import Layout from '../components/Layout';
+import Head from 'next/head';
 
 const App = ({ Component, pageProps: { session, ...pageProps } }) => {
   return (
@@ -19,6 +20,9 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
             gtag('config', 'G-C0L59QJF4N');
           `}
         </Script>
+        <Head>
+          <title>Refero</title>
+        </Head>
         <Component {...pageProps} />
       </Layout>
     </SessionProvider>

@@ -21,7 +21,6 @@ class MyDocument extends Document {
             name='description'
             content='Refero - Connect with Learners and Job Seekers'
           />
-          <title>Refero</title>
         </Head>
         <body>
           <Main />
